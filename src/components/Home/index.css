@@ -1,0 +1,58 @@
+/* Write your CSS code here */
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .body-container {
+    flex-direction: column;
+  }
+  .image-container1 {
+    display: flex;
+    justify-content: center;
+  }
+  .image-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image-container1 {
+    display: none;
+  }
+  .image-container {
+    display: flex;
+  }
+}
+
+.heading {
+  font-size: 35px;
+  font-family: 'Roboto';
+}
+
+.image-size {
+  height: 350px;
+  width: 350px;
+}
+
+.button {
+  background-color: #0967d2;
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Roboto';
+}
+
+.para {
+  font-family: 'Roboto';
+  font-size: 25px;
+}
